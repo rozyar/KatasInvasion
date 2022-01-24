@@ -1,0 +1,33 @@
+/*Tamanho da Tela do jogo*/
+.grid{
+    width:300px;
+    height: 300px;
+    border: solid black 1px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/*quadrados do jogo*/
+.grid div{
+    width: 20px;
+    height: 20px;
+}
+
+/*Naves invasoras*/
+.invader{
+    background-color:purple;
+    border-radius: 10px;
+}
+
+/*Nave matadora de Alien*/
+.shooter{
+    background-color:green;
+}
+
+.laser{
+    background-color: orange;
+}
+
+.boom{
+    background-color:red;
+}
