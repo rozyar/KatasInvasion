@@ -1,33 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.bar {
+    width: 100%; 
+    height: 120px;
+    background-color: #666666;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Doom 2016 Text', sans-serif;
+    font-size:50px;
+    color: white;
+    letter-spacing: 3px;
+    
+}
+
+
+
 /*Tamanho da Tela do jogo*/
+
 .grid{
-    width:300px;
-    height: 300px;
-    border: solid black 1px;
+    width:600px;
+    height: 600px;
+    border: solid white 1px;
     display:flex;
+    justify-content: center;
+    margin-left: 35vw;
     flex-wrap: wrap;
+}
+
+body{
+    background-image: url(./imagens/ela.jpg);
 }
 
 /*quadrados do jogo*/
 .grid div{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 /*Naves invasoras*/
 .invader{
-    background-color:purple;
-    border-radius: 10px;
+    background-image: url(./imagens/krita.png);
+    
 }
 
 /*Nave matadora de Alien*/
 .shooter{
-    background-color:green;
+    background-image: url(./imagens/pudim.png);
 }
 
 .laser{
-    background-color: orange;
+    background-image: url(./imagens/js.jpg);
 }
 
 .boom{
-    background-color:red;
+    background-image:url(./imagens/boom.png);
 }

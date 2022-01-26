@@ -95,27 +95,29 @@ function moveShooter(e) {
     draw()
   
     if (squares[currentShooterIndex].classList.contains('invader', 'shooter')) {
-      resultsDisplay.innerHTML = 'GAME OVER'
+      resultsDisplay.innerHTML = 'Your code is not clean enough!'
       clearInterval(invadersId)
     }
   
     for (let i = 0; i < alienInvaders.length; i++) {
       if(alienInvaders[i] > (squares.length)) {
-        resultsDisplay.innerHTML = 'GAME OVER'
+        resultsDisplay.innerHTML = 'Your code is not clean enough!'
         clearInterval(invadersId)
       }
     }
     if (aliensRemoved.length === alienInvaders.length) {
-      resultsDisplay.innerHTML = 'YOU WIN'
+      resultsDisplay.innerHTML = 'You anihilated the KATAS!!!'
       clearInterval(invadersId)
     }
   }
-  invadersId = setInterval(moveInvaders, 600)
+  invadersId = setInterval(moveInvaders, 200)
   
   function shoot(e) {
     let laserId
     let currentLaserIndex = currentShooterIndex
     function moveLaser() {
+
+      //Shoot Direction
       squares[currentLaserIndex].classList.remove('laser')
       currentLaserIndex -= width
       squares[currentLaserIndex].classList.add('laser')
