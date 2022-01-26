@@ -106,7 +106,7 @@ function moveShooter(e) {
       }
     }
     if (aliensRemoved.length === alienInvaders.length) {
-      resultsDisplay.innerHTML = 'You anihilated the KATAS!!!'
+      resultsDisplay.innerHTML = 'You anihilated the KATAS'
       clearInterval(invadersId)
     }
   }
